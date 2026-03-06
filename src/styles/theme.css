@@ -1,0 +1,128 @@
+:root {
+ primary-color: #050;
+  --text-color: #ffffff;
+  --accent-color: #D4AF37;
+  --low-priority-color: #8bc34a;
+  --medium-priority-color: #ffc107;
+  ---priority-color:f44336;
+  --font-family: 'Playfair Display',;
+}
+
+body {
+  font-family: varfont-family);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  padding: 20;
+}
+
+.column {
+  background-color: #2f2f2f;
+  padding: 10px;
+  border: 1px solid #D4AF37;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.column-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task  background-color: #4f4f4f;
+  padding: 10px;
+  border: 1px solid #D4AF37;
+  border: 10px;
+  margin-bottom: 10px;
+  cursor: move;
+}
+
+.task-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.priority-indicator {
+  width: 10px;
+  height:10px;
+ -radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.low-priority {
+  background-color: var(--low-priority-color);
+}
+
+.medium-priority {
+  background-color: var(--medium-priority-color);
+}
+
+.high-priority {
+  background-color: var(--high-priority-color);
+}
+
+.input  width: 100%;
+  padding: 10px;
+  border: 1px solid #D4AF37;
+  border-radius: 10px;
+  font-size: px;
+}
+
+.add-task-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 10 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-task-button:hover {
+  background-color: #c9a634;
+}
+
+.edit-task-button {
+  background-color: var(--accent);
+  color: var(--text-color);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-task-button:hover {
+  background-color: #c9a634;
+}
+
+.delete-task-button {
+  background-color: var(--high-priority-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+ : pointer;
+}
+
+.delete-task-button:hover {
+  background-color: #f44336;
+}
+
+.done-task-button {
+  background-color: var(--low-priority-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.done-task-button:hover {
+  background-color: #8bc34a;
+}
